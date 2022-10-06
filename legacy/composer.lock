@@ -878,22 +878,22 @@
         },
         {
             "name": "zf1s/zend-auth",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zf1s/zend-auth.git",
-                "reference": "66547b97e24f72206e57fbf5396b0423bc89579e"
+                "reference": "2bf162b28c2ce8777a94b676d9861fbf133a916c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zf1s/zend-auth/zipball/66547b97e24f72206e57fbf5396b0423bc89579e",
-                "reference": "66547b97e24f72206e57fbf5396b0423bc89579e",
+                "url": "https://api.github.com/repos/zf1s/zend-auth/zipball/2bf162b28c2ce8777a94b676d9861fbf133a916c",
+                "reference": "2bf162b28c2ce8777a94b676d9861fbf133a916c",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
                 "php": ">=5.3.3",
-                "zf1s/zend-exception": "^1.14.0"
+                "zf1s/zend-exception": "^1.15.0"
             },
             "replace": {
                 "zf1/zend-auth": "^1.12"
@@ -929,9 +929,9 @@
                 "zend"
             ],
             "support": {
-                "source": "https://github.com/zf1s/zend-auth/tree/1.14.0"
+                "source": "https://github.com/zf1s/zend-auth/tree/1.15.0"
             },
-            "time": "2021-10-01T14:41:55+00:00"
+            "time": "2022-10-04T14:16:25+00:00"
         },
         {
             "name": "zf1s/zend-cache",
@@ -1265,7 +1265,7 @@
         },
         {
             "name": "zf1s/zend-exception",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zf1s/zend-exception.git",
@@ -1307,7 +1307,7 @@
                 "zend"
             ],
             "support": {
-                "source": "https://github.com/zf1s/zend-exception/tree/1.14.0"
+                "source": "https://github.com/zf1s/zend-exception/tree/1.15.0"
             },
             "time": "2021-10-01T14:41:55+00:00"
         },
@@ -4178,5 +4178,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
