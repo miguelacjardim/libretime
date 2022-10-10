@@ -11,14 +11,14 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - uses: actions/setup-python@v2
       - uses: pre-commit/action@v2.0.3
 
   check-shell:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - uses: actions/setup-python@v2
       - run: |
           python -m venv venv && source venv/bin/activate
@@ -39,7 +39,7 @@ jobs:
   test-tools:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - uses: actions/setup-python@v2
       - run: make all
         working-directory: tools
@@ -47,7 +47,7 @@ jobs:
   lint-legacy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - uses: shivammathur/setup-php@v2
         with:
           php-version: 7.4
@@ -70,7 +70,7 @@ jobs:
       ENVIRONMENT: testing
       LIBRETIME_LOG_DIR: /tmp/log/libretime
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
 
       - name: Setup PostgreSQL
         run: |
@@ -124,7 +124,7 @@ jobs:
       run:
         shell: bash
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
       - uses: actions/cache@v2
         with:
           path: ~/.cache/pip
@@ -160,7 +160,7 @@ jobs:
         shell: bash
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
 
       - uses: actions/cache@v2
         with:
@@ -205,7 +205,7 @@ jobs:
       LIBRETIME_CONF_FILE: /tmp/libretime-test.conf
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.1.0
 
       - uses: actions/cache@v2
         with:
